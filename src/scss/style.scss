@@ -1,0 +1,81 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+@import "../fonts/stylesheet.css";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: 942px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+$museo500: 'Museo Sans Cyrl 500';
+$museo700: 'Museo Sans Cyrl 700';
+$museo300: 'Museo Sans Cyrl 300';
+$red :#C70101;
+
+
+
+
+@mixin btns($width, $height, $fs, $ff){
+  width: $width;
+  height: $height;
+  font-size: $fs;
+  font-family: $ff;
+  background-color: #C70101;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  &:hover{
+    background: #869791;
+    color: antiquewhite;
+    transition-duration: 0.6s
+  }
+}
+
+@mixin text($ff, $fs, $cr){
+  font-family: $ff;
+  font-size: $fs;
+  color: $cr;
+  font-style: normal;
+}
+.go-top{
+  width: 100px;
+  height: 25px;
+  background: $red;
+  color: white;
+  text-decoration: none;
+  font-family: $museo500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+@import "header";
+@import "home";
+@import "second";
+@import "consult";
+@import "slide";
+@import "catalog";
+@import "review";
+@import "footer";
+@import "media";
+@import "overlay";

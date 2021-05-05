@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .header-info {
+    display: none;
+  }
+
+  .burger {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+  }
+  .burger__line {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}

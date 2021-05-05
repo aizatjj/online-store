@@ -1,0 +1,33 @@
+
+.footer{
+  position: relative;
+  &__box{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 361px;
+    height: 271px;
+    background-color: $red;
+    z-index: 2;
+    padding: 51px 0 60px;
+    &-title{
+      @include text($museo500, 20px, #FFFFFF);
+      text-align: center;
+    }
+    &-subtitle{
+      @include text($museo300, 20px,#FFFFFF);
+      text-align: center;
+      margin: 36px 0 37px;
+    }
+  }
+  &__icons{
+    display: flex;
+    justify-content: center;
+    column-gap: 29px;
+  }
+  &__link{
+    width: 51px;
+    height: 51px;
+  }
+}

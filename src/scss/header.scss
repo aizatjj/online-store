@@ -1,0 +1,37 @@
+.header{
+  padding-top: 21px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    &__company{
+      text-align: center;
+    }
+    &__title{
+      @include text($museo500, 11px, #ffffff);
+      margin-bottom: 12px;
+      line-height: 11px;
+    }
+    &__subtitle{
+      @include text($museo700, 18px, #ffffff);
+    }
+    &__contacts{
+      display: flex;
+      flex-direction: column;
+    }
+    &__tel{
+      @include text($museo700, 18px, #ffffff);
+      text-transform: none;
+      margin-bottom: 7px;
+      text-decoration: none;
+    }
+    &__btn{
+      @include btns(150px, 30px, 12px,$museo500);
+    }
+  }
+}

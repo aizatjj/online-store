@@ -1,0 +1,37 @@
+.review{
+  padding: 103px 0 70px;
+  &__title{
+    @include text($museo700, 30px, #0D0D0D);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__people{
+    display: flex;
+    margin-top: 55px;
+    &-face{
+      &-img{
+        width: 171px;
+        height: 171px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__description{
+    margin-left: 61px;
+    &-title{
+      @include text($museo700, 18px, #0D0D0D);
+      text-align: left;
+    }
+    &-num{
+      @include text($museo500, 14px, #646464);
+      text-align: left;
+      margin: 14px 0;
+    }
+    &-subtitle{
+      @include text($museo500, 16px, #0D0D0D);
+      text-align: left;
+    }
+  }
+  
+}

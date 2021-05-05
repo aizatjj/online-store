@@ -1,0 +1,27 @@
+.second{
+  background: #F6F6F6;
+  padding: 85px 0 78px;
+  &__title{
+    @include text ($museo700, 30px, #0D0D0D);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+  }
+  &__col-4 {
+    width: 33%;
+    text-align: center;
+  }
+  &__col-title{
+    @include text($museo700, 18px,#0D0D0D);
+    margin-top: 38px;
+    margin-bottom: 25px;
+  }
+  &__col-subtitle{
+    @include text($museo300, 14px,#0D0D0D)
+  }
+  &__run{
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+  }
+}
